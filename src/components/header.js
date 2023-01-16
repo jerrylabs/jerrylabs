@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'gatsby'
 import classnames from 'classnames'
+import { globalHistory } from "@reach/router"
 
 const localizeURL = (url) => url
   .replace('kontakt', 'contact')
@@ -42,7 +43,7 @@ export default () => {
               </Link>
             </li>
             <li>
-              <a href={localizeURL(window.location.href)} title="English version" class="localization">
+              <a href={localizeURL(globalHistory.location.pathname)} title="English version" class="localization">
                 <img src="/images/uk_flag.svg" alt="English version" />
               </a>
             </li>
