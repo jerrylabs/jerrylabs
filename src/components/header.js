@@ -2,6 +2,13 @@ import React, {useState} from 'react'
 import {Link} from 'gatsby'
 import classnames from 'classnames'
 
+const localizeURL = (url) => url
+  .replace('kontakt', 'contact')
+  .replace('hry', 'games')
+  .replace('weby', 'webs')
+  .replace('licence', 'license')
+  .replace('jerrylabs.cz', 'jerrylabs.games.com')
+
 export default () => {
   // viditelnost na mobilu
   const [expanded, expand] = useState(false)
@@ -19,7 +26,7 @@ export default () => {
         </div>
         <nav>
           <ul className={classnames('header__navigation', {'header__navigation--mobile-visible': expanded})}>
-		   <li>
+             <li>
               <Link to="/hry/" activeClassName="selected">
                 <span>Hry</span>
               </Link>
@@ -34,11 +41,11 @@ export default () => {
                 <span>Kontakt</span>
               </Link>
             </li>
-            {/* <li>
-              <a href="http://jerrylabsgames.com" title="English version" class="localization">
+            <li>
+              <a href={localizeURL(window.location.href)} title="English version" class="localization">
                 <img src="/images/uk_flag.svg" alt="English version" />
               </a>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <button onClick={() => expand(!expanded)} className="mobile-menu-icon">

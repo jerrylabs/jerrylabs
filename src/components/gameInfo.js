@@ -26,7 +26,7 @@ export default ({game}) => {
         </div>
       )}
 
-      {game.images && (
+      {!!game.images?.length && (
         <>
           <h2>Galerie</h2>
           <div className="gameInfo__gallery">
