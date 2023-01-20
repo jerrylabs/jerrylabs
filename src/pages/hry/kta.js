@@ -18,7 +18,7 @@ export default () => {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Karetní hra ke stažení a tisku. Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!" />
       </Helmet>
-      <Jumbotron title={currGame.title} className="home zoomy" image="kta-game" />
+      <Jumbotron title={currGame.title} className="zoomy" image="kta-game" />
       <div className="container game__panel">
         <div className="game__download">
           <p className="big">

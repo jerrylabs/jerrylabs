@@ -13,7 +13,7 @@ export default () => {
   const webs = require('../data/weby.json');
   return (
     <Layout>
-      <Jumbotron title="Weby od JerryLabs" className="home zoomy" image="matrix" />
+      <Jumbotron title="Weby od JerryLabs" className="jumbotron__matrix" image="matrix" />
       <section>
         <div className="container cards">
           {webs.map((web, i) => (

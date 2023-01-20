@@ -43,7 +43,7 @@ export default () => {
               </Link>
             </li>
             <li>
-              <a href={`http://www.jerrylabsgames.com${localizeURL(globalHistory.location.pathname)}`} title="English version" class="localization">
+              <a href={`http://www.jerrylabsgames.com${localizeURL(globalHistory.location.pathname)}`} title="English version" className="localization">
                 <img src="/images/uk_flag.svg" alt="English version" />
               </a>
             </li>
