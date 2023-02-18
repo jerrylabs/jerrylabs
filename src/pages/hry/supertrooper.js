@@ -44,7 +44,7 @@ export default () => {
             Prvopočátky karetní hry Super Trooper vznikly v ranných 90. letech na motivy legendárního Doomtrooperu. V průběhu let vzniklo přes 2000 karet a desítky balíčků.
           </p>
           <p>
-            Přispěním k provozu JerryLabs můžete pomoci k výrobě nových karet a balíčků a jejich digitalizaci a překladu do angličtiny. Aktuálně je vývoj karet Super Trooper završen samostatně hratelným rozšířením <Link to="/games/finalconflict">Final Conflict</Link>.
+            Přispěním k provozu JerryLabs můžete pomoci k výrobě nových karet a balíčků a jejich digitalizaci a překladu do angličtiny. Aktuálně je vývoj karet Super Trooper završen samostatně hratelným rozšířením <Link to="/hry/finalconflict">Final Conflict</Link>.
           </p>
           <h2>Poděkování</h2>
           <p>

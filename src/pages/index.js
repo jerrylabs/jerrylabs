@@ -17,7 +17,7 @@ export default () => {
       <Jumbotron title="Designové a polygrafické studio" className="zoomy" image="jumbotron" />
       <div className="container">
         <p className="big center">
-          Jsme nezávisle studio zabývající se webovým a herním designem, programováním a výrobou deskových her.
+          Jsme nezávislé studio zabývající se webovým a herním designem, programováním a výrobou deskových her.
         </p>
         <p className="big center">
           <Link to="/hry/">Naše hry</Link> jsou volně k dispozici ke sdílení a šíření a můžete si je tak sami vytisknout nebo <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">nechat vyrobit</a>.
