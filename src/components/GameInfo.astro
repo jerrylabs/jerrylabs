@@ -28,12 +28,11 @@ const { game } = Astro.props;
       <h2>Galerie</h2>
       <div class="gameInfo__gallery">
         {game.images.map((image, i) => (
-          <button
-            type="button"
+          <a href={`/images/games/${game.codeName}/${image}`}
             class="gameInfo__preview"
             style={{backgroundImage: `url(/images/games/${game.codeName}/${image})`}}
             data-fslightbox="game-lightbox"
-          />
+          ></a>
         ))}
       </div>
     </>
@@ -110,3 +109,5 @@ const { game } = Astro.props;
   .gameInfo__extLinks { justify-content: flex-start; }
 }
 </style>
+
+<script src="../scripts/fslightbox.js"></script>
