@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Jumbotron from '../components/Jumbotron.astro'
+import games from '../data/hry.json'
+---
+<Layout>
+  <Jumbotron title="Hry od JerryLabs" className="zoomy" image="sisays-ring" />
+  <div class="container">
+    <p class="big center">
+      V JerryLabs vyrábíme zábavné kopírovatelné společenské deskové hry. Všechny vydané hry jsou k&nbsp;dispozici zdarma ke stažení a&nbsp;vytisknutí pod licencí <a href="/licence/">CC BY-NC-ND</a>. Hry je možné nekomerčně šířit a&nbsp;kopírovat nebo si ji u&nbsp;nás můžete <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">nechat vyrobit</a>.
+    </p>
+  </div>
+  <div class="container cards small">
+     {games.map((game, i) => (
+      <a
+        class={`card card--horizontal card--full${game?.status ? ` label ${game.status}` : ''}`}
+       href={`/hry/${game.codeName}`} title={game.title}
+      >
+        <div class="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
+        <div class="card__content">
+          <h3 class="card__title">{game.title}</h3>
+          <p class="card__description brief">Pro {game.players} hráčů {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
+          <div class="card__description">{game.description}</div>
+        </div>
+      </a>
+    ))}
+  </div>
+</Layout>

@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'finalconflict')
+---
+
+<Layout class="game">
+  <Jumbotron title={currGame.title} class="zoomy" image="finalconflict" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Akční karetní hra volně šiřitelná na základě <a href="/licence/">licence Creative Commons</a>.
+        Již brzy!
+        {/* ZIP archiv (XX MB) obsahuje PDF s kartami, jejich ruby a pravidla hry. Hru si zde můžete stáhnout a vytisknout nebo nechat u nás vyrobit. */}
+        </p>
+      {/* <div class="game__download-wrap">
+        <a href="/games/finalconflict.zip" class="button button--download">Stáhnout</a>
+        <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" class="button button--order">Vyrobit</a>
+      </div> */}
+
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>Více o hře</h2>
+      <p>
+        V roce 2500 nemá lidstvo na růžích ustláno. Zplundrovaná a zamořená planeta Země se stala nehostinným domovem pro lidstvo, jehož celosvětová populace se rozdělila do dvou ideologických frakcí.
+      </p>
+      <p>
+        Hnutí Progresu vyznává technooptimistickou víru v nikdy nekončící virtuální růst a pokrok díky neustálému vývoji nových technologií. Jedovatý vzduch i voda spolu s oslabenou atmosférou donutily tuto část lidstva k životu v obrovských převážně podzemních metropolích, kde většina obyvatel sotva kdy spatří sluneční světlo. Naplňování svých potřeb svěřili z velké části robotům a virtuální realitě.
+      </p>
+      <p>
+        Zbytek lidstva, který zůstal venku v pustině, se postupně adaptoval na změny. Hnutí Balance se řídí  fundamentalistickou filosofií udržitelnosti a naprosté rovnováhy člověka s přírodou. Tato společenství jsou řízena striktními pravidly ohledně chování a stylu života svých členů, která jsou vynucována přísnými tresty. Nulový odpad a téměř stoprocentní recyklace vyžaduje náročný životní styl, který však přispívá k jejich odolnosti.
+      </p>
+      <p>
+        V metropolích Progresu lidé netušili, že venku může přežít nějaká civilizovaná společnost. Když utlumující se geotermální zdroje spolu s kolísající solární aktivitou začali způsobovat stále častější energetické problémy, byli donuceni do pustiny vyslat průzkumníky hledající nové zdroje. K jejich překvapení se na části povrchu vrátila vegetace v podobě radioaktivní džungle a tak rychle začali doplňovat energii nezbytnou pro chod měst spalováním zde získávané biomasy.
+      </p>
+      <p>
+        Střet Balance a Progresu na sebe nenechal dlouho čekat. Jakákoliv naděje na usmíření je z ideologických důvodu zcela nemyslitelná. Nastal poslední střet v historii lidstva, finální konflikt.
+      </p>
+      <p>
+        Final Conflict je poslední samostatně hratelnou expanzí karetní hry <a href='/hry/supertrooper'>Super Trooper.</a>
+      </p>
+    </div>
+  </section>
+</Layout>

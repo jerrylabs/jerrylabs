@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+<Layout>
+  <div class="p404">
+    <div class="container">
+      <section>
+        <h1>Bylo tu, není tu, 404 na plotu...</h1>
+        <p>Nemůžeme to najít <span role="img" aria-label="Sorry">🤷</span> Zkuste třeba:</p>
+
+          <ul class="p">
+          <li><a href="/weby/"><span>Weby</span></a></li>
+          <li><a href="/hry"><span>Hry</span></a></li>
+          <li><a href="/kontakt/"><span>Kontakt</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .p404 {
+    background: #fff url(/images/ravens.jpg) center bottom no-repeat;
+    background-size: cover;
+    padding: 1rem 0 0;
+    min-height: calc(100vh - 7.125rem);
+    margin-bottom: -2rem;
+  }
+</style>

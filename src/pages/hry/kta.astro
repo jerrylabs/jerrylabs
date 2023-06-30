@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'kta')
+---
+<Layout class="game"
+    ogTitle="KTA: Kraď to auto!"
+    ogUrl="https://www.jerrylabs.cz/hry/kta"
+    ogImage="https://www.jerrylabs.cz/images/kta.jpg"
+    ogType="website"
+    ogDescription="Karetní hra ke stažení a tisku. Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!"
+  >
+  <Jumbotron title={currGame.title} className="zoomy" image="kta-game" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Hra je volně šiřitelná na základě <a href="/licence/">licence Creative Commons</a>.
+        ZIP archiv (23 MB) obsahuje pravidla a PDF s kartami a žetonky. Hru si zde můžete stáhnout a vytisknout nebo nechat u nás vyrobit.
+      </p>
+      <div class="game__download-wrap">
+        <a href="/games/kta.zip" class="button button--download">Stáhnout</a>
+        <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" class="button button--order">Vyrobit</a>
+      </div>
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>Více o hře</h2>
+      <p>
+      Přestřelky, krádeže aut, honičky s policajty a destruction derby, to vše zažijete v nové karetní hře Kraď to auto!
+      </p>
+      <p>
+        Kraď to auto! je sonda do automobilového průmyslu a "obchodu" ve starém dobrém Gangsterburgu. Kraď auta, ujížděj policajtům, bourej a střílej do soupeřů abys splnil kšefty pro mafiánské bosse a nahrabal si pořádný balík peněz!
+      </p>
+      <h2>Poděkování</h2>
+      <p>
+        Děkujeme Rockstar games za inspiraci, Béďovi za společné zážitky z Anywhere City, Vlastičovi a Jaroušovi za testing a feedback, Jolance za motivaci a podporu a všem dalším, kteří se podíleli na výsledné podobě hry.
+      </p>
+    </div>
+  </section>
+</Layout>
