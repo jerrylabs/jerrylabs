@@ -21,17 +21,17 @@ const englishPath = currentPath
       <nav>
         <ul class="header__navigation">
           <li>
-            <a href="/hry" class={currentPath === "hry" ? "selected" : ""}>
+            <a href="/hry" class={currentPath.startsWith("hry") ? "selected" : ""}>
               <span>Hry</span>
             </a>
           </li>
           <li>
-            <a href="/weby" class={currentPath === "weby" ? "selected" : ""}>
+            <a href="/weby" class={currentPath.startsWith("weby") ? "selected" : ""}>
               <span>Weby</span>
             </a>
           </li>
           <li>
-            <a href="/kontakt" class={currentPath === "kontakt" ? "selected" : ""}>
+            <a href="/kontakt" class={currentPath.startsWith("kontakt") ? "selected" : ""}>
               <span>Kontakt</span>
             </a>
           </li>
@@ -48,7 +48,6 @@ const englishPath = currentPath
       </button>
     </div>
   </header>
-  x{currentPath}x
 
 <script>
     const menuButton = document.querySelector('.mobile-menu-icon')
