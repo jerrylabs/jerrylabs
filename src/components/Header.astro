@@ -31,7 +31,7 @@ const englishPath = currentPath
             </a>
           </li>
           <li>
-            <a href="/kontakt" class={currentPath === "kontakty" ? "selected" : ""}>
+            <a href="/kontakt" class={currentPath === "kontakt" ? "selected" : ""}>
               <span>Kontakt</span>
             </a>
           </li>
@@ -48,6 +48,7 @@ const englishPath = currentPath
       </button>
     </div>
   </header>
+  x{currentPath}x
 
 <script>
     const menuButton = document.querySelector('.mobile-menu-icon')
@@ -137,6 +138,4 @@ const englishPath = currentPath
         padding-right: 0.625rem;
     }
   }
-
-
 </style>
