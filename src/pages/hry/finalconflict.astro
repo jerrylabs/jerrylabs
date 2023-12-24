@@ -7,7 +7,12 @@ import games from '../../data/hry.json'
 const currGame = games.find(game => game.codeName === 'finalconflict')
 ---
 
-<Layout class="game">
+<Layout class="game"
+  ogUrl="https://www.jerrylabs.cz/hry/finalconflict"
+  ogImage="https://www.jerrylabs.cz/images/finalconflict.jpg"
+  ogType="website"
+  ogDescription="Akční karetní postapokalyptická hra pro dva hráče hra ke stažení. Určete osud lidstva rozděleného do dvou nesmiřitelných frakcí na zplundrované planetě."
+>
   <Jumbotron title={currGame.title} className="zoomy" image="finalconflict" />
   <div class="container game__panel">
     <div class="game__download">
