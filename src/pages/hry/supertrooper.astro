@@ -6,12 +6,7 @@ import Support from '../../components/Support.astro'
 import games from '../../data/hry.json'
 const currGame = games.find(game => game.codeName === 'supertrooper')
 ---
-<Layout class="game"ogTitle="KTA: Kraď to auto!"
-  ogUrl="https://www.jerrylabs.cz/hry/finalconflict"
-  ogImage="https://www.jerrylabs.cz/images/finalconflict.jpg"
-  ogType="website"
-  ogDescription="Akční karetní postapokalyptická hra pro dva hráče hra ke stažení. Určete osud lidstva rozděleného do dvou nesmiřitelných frakcí na zplundrované planetě."
-  >
+<Layout class="game"ogTitle="KTA: Kraď to auto!">
   <Jumbotron title={currGame.title} className="zoomy" image="supertrooper" />
   <div class="container game__panel">
     <div class="game__download">

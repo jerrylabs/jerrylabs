@@ -5,7 +5,12 @@ import webs from '../data/weby.json'
 ---
 <Layout>
   <Jumbotron title="Weby od JerryLabs" className="jumbotron__matrix" image="matrix" />
-  <section>
+
+    <div class="container">
+      <p class="big center">
+        Kromě her se zabýváme rovněž programováním a webdesignem. Pro statické webové stránky poskytujeme hosting zdarma.
+      </p>
+    </div>
     <div class="container cards">
       {webs.map((web, i) => (
         <a
@@ -21,11 +26,10 @@ import webs from '../data/weby.json'
         </a>
       ))}
     </div>
-  </section>
   <section>
-    <p class="center">
+    <div class="center">
       Potřebujete vyrobit či zprovoznit web? Neváhejte nás <a href="/kontakt">kontaktovat</a>!
-    </p>
+    </div>
   </section>
 </Layout>
 
