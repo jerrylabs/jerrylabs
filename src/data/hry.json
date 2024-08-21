@@ -67,9 +67,9 @@
     "players": "3",
     "time": "33 minut",
     "age": "od 3 let",
-    "publishYear": "???",
+    "publishYear": "2024",
     "endorsement": "Abstraktní logická hra, v které zvítězá hráč, který jako první nasbírá drahokamy 3 různých barev.",
-    "description": "Zkompletováním trojic karet lze ovlivňovat pozice jednotlivých hráčů na herním plánu, jejich karty v ruce a drahokamy. Zvítězí ten, kdo jako první nasbírá drahokamy všech 3 barev.",
+    "description": "Symetrická logická hra pro tři hráče. Tři figurky tří barev se pohybují na herním plánu prostřednictvím skládání trojic karet a zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev. Hra obsahuje 3 figurky, 3×3 žetonů a 3×3×3×3+3×3 karet.",
     "tags": ["kompetetivní", "abstraktní", "logická"],
     "status": "comingsoon"
   }, {
@@ -80,7 +80,7 @@
     "age": "od 12 let",
     "publishYear": "???",
     "endorsement": "Vyberte si ty správné 3 mystické elementy a sestavte z nich nejsilnější kouzla, abyste porazili svého soupeře.",
-    "description": "Vytvořte si kombinací mystických elementů vlastní balíček bytostí a kouzel pro přežití v kolabujícím světě, kde se magie vymkla kontrole.",
+    "description": "Fantasy karetní hra s prvky jednoduchého deckbuildingu pro dva hráče. Každý hráč si vytvoří vlastní balíček výběrem 3 z 8 dostupných barev magie. Kdo zvítězí v souboji mystických warlordů ve zdivočelém světě, kde se magie vymkla kontrole?",
     "tags": ["kompetetivní", "fantasy", "postapo", "karetní", "strategická", "deck building"],
     "status": "comingsoon"
   }, {
@@ -91,7 +91,7 @@
     "age": "od 12 let",
     "publishYear": "???",
     "endorsement": "V multivesmíru se nachází spousta podivuhodných bytostí. Vyberte si svého favoreita a zkuste porazit všechny soupeře v interdimenzionální aréně!",
-    "description": "V multivesmíru se nachází spousta podivuhodných bytostí. Vyberte si svého favorita a zkuste porazit všechny soupeře v interdimenzionální aréně!",
+    "description": "V Multivesmíru se nachází spousta podivuhodných bytostí. Vyberte si svého favorita a zkuste porazit všechny soupeře v interdimenzionální aréně!",
     "tags": ["kompetetivní", "akční", "figurky", "humor"],
     "status": "comingsoon"
   }, {
