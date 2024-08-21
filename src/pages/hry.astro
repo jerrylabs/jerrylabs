@@ -1,7 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Jumbotron from '../components/Jumbotron.astro'
+import GameCard from '../components/GameCard.astro'
 import games from '../data/hry.json'
+const comingSoonGames = games.filter((game) => game.status === 'comingsoon')
+
 ---
 <Layout>
   <Jumbotron title="Hry od JerryLabs" className="zoomy" image="sisays-ring" />
@@ -10,19 +13,44 @@ import games from '../data/hry.json'
       V JerryLabs tvoříme zábavné společenské deskové hry. Všechny jsou k&nbsp;dispozici zdarma ke stažení a&nbsp;vytisknutí pod licencí <a href="/licence/">CC BY-NC-ND</a>. Anebo si je můžete <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174">nechat vyrobit</a> přímo u nás.
     </p>
   </div>
+  <section id="hry">
   <div class="container cards small">
-     {games.map((game, i) => (
-      <a
-        class={`card card--horizontal card--full${game?.status ? ` label ${game.status}` : ''}`}
-       href={`/hry/${game.codeName}`} title={game.title}
-      >
-        <div class="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
-        <div class="card__content">
-          <h3 class="card__title">{game.title}</h3>
-          <p class="card__description brief">Pro {game.players} hráčů {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
-          <div class="card__description">{game.description}</div>
-        </div>
-      </a>
-    ))}
-  </div>
+      {games.filter((game) => game.status !== 'comingsoon').map((game) => (
+        <a
+          class={`card card--horizontal card--full${game?.status ? ` label ${game.status}` : ''}`}
+          href={`/hry/${game.codeName}`} title={game.title}
+        >
+          <div class="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
+          <div class="card__content">
+            <h3 class="card__title">{game.title}</h3>
+            <p class="card__description brief">Pro {game.players} {game.players.length === 1 ? "hráče" : "hráčů"} {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
+            <div class="card__description">{game.description}</div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {!!comingSoonGames.length && (
+    <section id="pripravujeme">
+      <div class="container">
+        <h2 class="center">Připravujeme</h2>
+      </div>
+      <div class="container cards small">
+        {comingSoonGames.map((game) => (
+          <a
+            class={`card card--horizontal card--full${game?.status ? ` label ${game.status}` : ''}`}
+            title={game.title}
+          >
+            <div class="card__image" style={{backgroundImage: `url(/images/${game.codeName}.jpg)`}} />
+            <div class="card__content">
+              <h3 class="card__title">{game.title}</h3>
+              <p class="card__description brief">Pro {game.players} {game.players.length === 1 ? "hráče" : "hráčů"} {game.age} <span role="img" aria-label="Časová náročnost">⏰</span> {game.time}</p>
+              <div class="card__description">{game.description}</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </Layout>

@@ -44,8 +44,8 @@
     "age": "od 15 let",
     "publishYear": "2013",
     "endorsement": "Ovládni jako hlava mafiánské rodiny hospody, kasína, hampejzy a nakonec celé zkorumpované město Gangsterburg - semeniště kriminálníků a podvratných živlů.",
-    "description": "Desková budovatelská „obíhačka“, ve které hráči nakupují podniky šedé ekonomiky. Jejich prostřednictvím pak naplňují potřeby význačných veřejných činitelů za účelem ovládnutí města.",
-    "tags": ["kompetitivní", "budovatelská", "gangsterka", "mafie"],
+    "description": "Desková budovatelská hra ve stylu Monopolů, ve které hráči nakupují podniky šedé ekonomiky. Jejich prostřednictvím pak naplňují potřeby význačných veřejných činitelů za účelem ovládnutí města.",
+    "tags": ["kompetetivní", "budovatelská", "gangsterka", "mafie"],
     "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/332154/gangsterburg"}
   }, {
     "title": "Super Trooper",
@@ -61,5 +61,61 @@
       "bgg": "https://boardgamegeek.com/boardgame/144893/super-trooper",
       "zatrolene": "https://www.zatrolene-hry.cz/spolecenska-hra/super-trooper-3617/"
     }
+  }, {
+    "title": "Truel",
+    "codeName": "truel",
+    "players": "3",
+    "time": "33 minut",
+    "age": "od 3 let",
+    "publishYear": "???",
+    "endorsement": "Abstraktní logická hra, v které zvítězá hráč, který jako první nasbírá drahokamy 3 různých barev.",
+    "description": "Zkompletováním trojic karet lze ovlivňovat pozice jednotlivých hráčů na herním plánu, jejich karty v ruce a drahokamy. Zvítězí ten, kdo jako první nasbírá drahokamy všech 3 barev.",
+    "tags": ["kompetetivní", "abstraktní", "logická"],
+    "status": "comingsoon"
+  }, {
+    "title": "Mystic Elements",
+    "codeName": "elements",
+    "players": "2",
+    "time": "20‑40 minut",
+    "age": "od 12 let",
+    "publishYear": "???",
+    "endorsement": "Vyberte si ty správné 3 mystické elementy a sestavte z nich nejsilnější kouzla, abyste porazili svého soupeře.",
+    "description": "Vytvořte si kombinací mystických elementů vlastní balíček bytostí a kouzel pro přežití v kolabujícím světě, kde se magie vymkla kontrole.",
+    "tags": ["kompetetivní", "fantasy", "postapo", "karetní", "strategická", "deck building"],
+    "status": "comingsoon"
+  }, {
+    "title": "Degens of Multiverse",
+    "codeName": "degens",
+    "players": "2‑6",
+    "time": "20-40 minut",
+    "age": "od 12 let",
+    "publishYear": "???",
+    "endorsement": "V multivesmíru se nachází spousta podivuhodných bytostí. Vyberte si svého favoreita a zkuste porazit včechny soupeře v interdimenzionální aréně!",
+    "description": "V multivesmíru se nachází spousta podivuhodných bytostí. Vyberte si svého favorita a zkuste porazit včechny soupeře v interdimenzionální aréně!",
+    "tags": ["kompetetivní", "akční", "figurky", "humor"],
+    "status": "comingsoon"
+  }, {
+    "title": "Corny Kelleher: Vesmírný policajt",
+    "codeName": "kelleher",
+    "players": "1",
+    "time": "??? minut",
+    "age": "od 12 let",
+    "publishYear": "???",
+    "endorsement": "Remake textové adventury z roku 2004.",
+    "description": "Počítačová adventura, ve které se ocitnete v roli vesmírného policajta Cornyho Kellehera. Vyšetřete záhadu mezihvězdného křižníku ztroskotaného uprostřed pustého Vesmíru.",
+    "tags": ["počítačová", "adventura", "sci-fi", "humor"],
+    "status": "comingsoon"
+  }, {
+    "title": "Vaginator: karetní hra",
+    "codeName": "vaginator",
+    "players": "2-6",
+    "time": "30+ minut",
+    "age": "od 15 let",
+    "publishYear": "???",
+    "endorsement": "Karetní hra na motivy stejnojmenného filmu.",
+    "description": "Zachraňte jako členové komanda svět přes invazní záplavou krvelačných obřích zmutovaných lidožravých vagín!",
+    "tags": ["kooperativní", "karetní", "dobrodružná", "sci-fi", "humor"],
+    "status": "comingsoon"
   }
+
 ]
