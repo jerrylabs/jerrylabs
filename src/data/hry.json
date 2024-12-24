@@ -9,6 +9,7 @@
     "endorsement": "Abstraktní logická hra, v které zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev.",
     "description": "Symetrická abstraktní desková hra pro tři hráče. Tři figurky tří barev se pohybují na herním plánu prostřednictvím skládání trojic karet a zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev. Hra obsahuje 3 figurky, 3×3 žetonů a 3×3×3×3+3×3 karet.",
     "tags": ["kompetetivní", "abstraktní", "logická"],
+    "images": ["box.jpg", "board.jpg"],
     "status": "new"
   }, {
     "title": "Final Conflict",
