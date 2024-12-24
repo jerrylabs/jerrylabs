@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'truel')
+---
+<Layout class="game"
+    ogTitle="Truel"
+    ogUrl="https://www.jerrylabs.cz/hry/truel"
+    ogImage="https://www.jerrylabs.cz/images/truel.jpg"
+    ogType="website"
+    ogDescription="Abstraktní logická karetní hra pro tři hráče ke stažení a tisku. Sestavujte trojice karet a získejte drahokamy všech tří barev pro vítězství."
+  >
+  <Jumbotron title={currGame.title} className="zoomy" image="games/truel/board" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Hra je volně šiřitelná na základě <a href="/licence/">licence Creative Commons</a>.
+        ZIP archiv (23 MB) obsahuje pravidla a PDF s kartami a žetonky. Hru si zde můžete stáhnout a vytisknout nebo nechat u nás vyrobit.
+      </p>
+      <div class="game__download-wrap">
+        <a href="/games/truel.zip" class="button button--download">Stáhnout</a>
+        <a href="https://www.firmy.cz/sluzby/nabidka/vyroba-deskove-hry-12865086-174" class="button button--order">Vyrobit</a>
+      </div>
+      <Support />
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>Více o hře</h2>
+      <p>
+        Koncept hry vznikl téměř před 20 lety a letos byl dotažen, doladěn a otestován. Každý hráč hraje za figurku jedné barvy, která se snaží obíháním okruhl na herním plánu získat drahokamy.
+      </p>
+      <p>
+        Ve hře nejsou žádné kostky, veškeré změny ve hře se odehrávají pomocí sestavování trojic karet. Každý hráč ve svém tahu vyloží jednu kartu a jakmile je zkompletována celá trojice, vyhodnotí se její efekt na hru.
+      </p>
+      <p>
+        Pohyb figurek, přibírání karet navíc nebo i zisk či ztráta drahokamů tak záleží na tom, jak hráči společně trojici sestaví.
+      </p>
+      <h2>Poděkování</h2>
+      <p>
+        Děkujeme zejména Jolance a Andy C. za finální testování a odladění konečné podoby hry 🙏❤️
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,5 +1,16 @@
 [
   {
+    "title": "Truel",
+    "codeName": "truel",
+    "players": "3",
+    "time": "33 minut",
+    "age": "od 3 let",
+    "publishYear": "2024",
+    "endorsement": "Abstraktní logická hra, v které zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev.",
+    "description": "Symetrická abstraktní desková hra pro tři hráče. Tři figurky tří barev se pohybují na herním plánu prostřednictvím skládání trojic karet a zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev. Hra obsahuje 3 figurky, 3×3 žetonů a 3×3×3×3+3×3 karet.",
+    "tags": ["kompetetivní", "abstraktní", "logická"],
+    "status": "new"
+  }, {
     "title": "Final Conflict",
     "codeName": "finalconflict",
     "players": "2",
@@ -10,8 +21,7 @@
     "description": "Vyvrcholení dlouholeté karetní série Super Trooper v podobě samostatně hratelné expanze s vylepšenými pravidly.",
     "tags": ["kompetetivní", "akční", "karetní", "sci-fi", "post-apokalyptická"],
     "images": [],
-    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/378351/super-trooper-final-conflict"},
-    "status": "new"
+    "extLinks": {"bgg": "https://boardgamegeek.com/boardgame/378351/super-trooper-final-conflict"}
   },
   {
     "title": "Kraď to auto!",
@@ -61,17 +71,6 @@
       "bgg": "https://boardgamegeek.com/boardgame/144893/super-trooper",
       "zatrolene": "https://www.zatrolene-hry.cz/spolecenska-hra/super-trooper-3617/"
     }
-  }, {
-    "title": "Truel",
-    "codeName": "truel",
-    "players": "3",
-    "time": "33 minut",
-    "age": "od 3 let",
-    "publishYear": "2024",
-    "endorsement": "Abstraktní logická hra, v které zvítězá hráč, který jako první nasbírá drahokamy 3 různých barev.",
-    "description": "Symetrická abstraktní desková hra pro tři hráče. Tři figurky tří barev se pohybují na herním plánu prostřednictvím skládání trojic karet a zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev. Hra obsahuje 3 figurky, 3×3 žetonů a 3×3×3×3+3×3 karet.",
-    "tags": ["kompetetivní", "abstraktní", "logická"],
-    "status": "comingsoon"
   }, {
     "title": "Mystic Elements",
     "codeName": "elements",
