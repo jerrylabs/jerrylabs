@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Jumbotron from '../../components/Jumbotron.astro'
+import GameInfo from '../../components/GameInfo.astro'
+import Support from '../../components/Support.astro'
+import games from '../../data/hry.json'
+const currGame = games.find(game => game.codeName === 'elements')
+---
+<Layout class="game"
+    ogTitle="Mystic Elements"
+    ogUrl="https://www.jerrylabs.cz/hry/elements"
+    ogImage="https://www.jerrylabs.cz/images/elements.jpg"
+    ogType="website"
+    ogDescription={currGame.endorsement}
+  >
+  <Jumbotron title={currGame.title} className="zoomy" image="elements-jumbo" />
+  <div class="container game__panel">
+    <div class="game__download">
+      <p class="big">
+        Hra je aktuálně ve stádiu beta testingu. Chcete se stát součástí testovací skupiny a&nbsp;pomoci nám hru doladit?
+      </p>
+      <div class="game__download-wrap">
+        <a href="https://forms.gle/mzJVAEujYptSXi4i8" class="button button--download">Kontaktujte nás!</a>
+      </div>
+    </div>
+    <GameInfo game={currGame} />
+  </div>
+  <section>
+    <div class="container">
+      <h2>Více o hře</h2>
+      <p>
+        Hra Mystic Elements vznikala s přestávkami celkem 7 let. Inspirací ji byly téměř všechny známé sběratelské karetní hry. Hra unikátně kombinuje jejich mechaniky se svými orginálními prvky k maximalizaci hratelnosti a přístupnosti i nehráčům.
+      </p>
+      <p>
+        Jedno balení obsahuje 120 karet, 8 žetonů, počítadla a pravidla. Pro více než 2 hráče je možné zkombinovat dohromady více balení.
+      </p>
+      <p>
+        Balíček tvoří životy hráče, když dojde, hráč prohrál. Balíček si každý hráč vytvoří výběrem jedné z 56 kombinací trojice barev mystické energie, kterých je celkem 8 a najdete je i v logu hry.
+      </p>
+      <p>
+        Každé kolo si hráč přibírá karty do počtu 5. Karty se vykládají za zaplacení energie, kterou hráči v postupně se zvyšujícím množství dostávají automaticky na začátku každého tahu. Hráč si však musí vybrat barvu získané energie.
+      </p>
+      <p>
+        Energie se počítá pomocí speciálních žetonů/mincí, jejichž pohybem po hrací pole hráč sesílá tvory, kouzla, čáry a relikvie.
+      </p>
+      <h2>Probíhá dolaďování hry</h2>
+      <p>
+        Přidejte se do našeho týmu beta testerů a pomozte nám hru doladit před jejím oficiálním vydáním.
+      </p>
+      <p>
+        <a href="https://forms.gle/mzJVAEujYptSXi4i8" class="button button--download">Otestovat</a>
+      </p>
+    </div>
+  </section>
+</Layout>
