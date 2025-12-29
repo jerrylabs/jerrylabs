@@ -1,5 +1,17 @@
 [
   {
+    "title": "Mystic elements",
+    "codeName": "elements",
+    "players": "2-?",
+    "time": "15 minut",
+    "age": "od 6 let",
+    "publishYear": "2026",
+    "endorsement": "Fantasy karetní hra s prvky jednoduchého deckbuildingu pro dva hráče. Každý hráč si vytvoří vlastní balíček výběrem 3 z 8 dostupných barev magie. Kdo zvítězí v souboji mystických vojevůdců ve zdivočelém světě, kde se magie vymkla kontrole?",
+    "description": "Vyberte si ty správné 3 mystické elementy a sestavte z nich nejsilnější kouzla, abyste porazili svého soupeře. Hra obsahuje 8 barev magie, z nichž každá představuje jiný herní styl a strategii. Hráči musí pečlivě vybírat své karty a plánovat své tahy, aby překonali protivníka. Hra je rychlá, zábavná a plná napětí!",
+    "tags": ["kompetetivní", "fantasy", "karetní", "strategická", "deck building"],
+    "images": ["logo.png", "karty.JPEG", "hra.JPEG"],
+    "status": "beta"
+  }, {
     "title": "Truel",
     "codeName": "truel",
     "players": "3",
@@ -9,8 +21,7 @@
     "endorsement": "Abstraktní logická hra, v které zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev.",
     "description": "Symetrická abstraktní desková hra pro tři hráče. Tři figurky tří barev se pohybují na herním plánu prostřednictvím skládání trojic karet a zvítězí hráč, který jako první nasbírá drahokamy 3 různých barev. Hra obsahuje 3 figurky, 3×3 žetonů a 3×3×3×3+3×3 karet.",
     "tags": ["kompetetivní", "abstraktní", "logická"],
-    "images": ["box.jpg", "board.jpg"],
-    "status": "new"
+    "images": ["box.jpg", "board.jpg"]
   }, {
     "title": "Final Conflict",
     "codeName": "finalconflict",
@@ -72,17 +83,6 @@
       "bgg": "https://boardgamegeek.com/boardgame/144893/super-trooper",
       "zatrolene": "https://www.zatrolene-hry.cz/spolecenska-hra/super-trooper-3617/"
     }
-  }, {
-    "title": "Mystic Elements",
-    "codeName": "elements",
-    "players": "2",
-    "time": "20‑40 minut",
-    "age": "od 12 let",
-    "publishYear": "???",
-    "endorsement": "Vyberte si ty správné 3 mystické elementy a sestavte z nich nejsilnější kouzla, abyste porazili svého soupeře.",
-    "description": "Fantasy karetní hra s prvky jednoduchého deckbuildingu pro dva hráče. Každý hráč si vytvoří vlastní balíček výběrem 3 z 8 dostupných barev magie. Kdo zvítězí v souboji mystických vojevůdců ve zdivočelém světě, kde se magie vymkla kontrole?",
-    "tags": ["kompetetivní", "fantasy", "postapo", "karetní", "strategická", "deck building"],
-    "status": "comingsoon"
   }, {
     "title": "Degens of Multiverse",
     "codeName": "degens",

@@ -83,6 +83,7 @@ import Footer from '../components/Footer.astro'
   .nowrap { white-space: nowrap; }
   .blue-bg { background: rgba(75,0,130,0.2); }
   .center { text-align: center; }
+  .pretty { text-align: balance; }
   .nomargin { margin: 0; }
   button { padding: 0; border: none; background: none; }
 
@@ -131,11 +132,12 @@ import Footer from '../components/Footer.astro'
       color: white; position: absolute;
       top: 0; left: 2.8rem;
       transform: translate(-50%, 2rem) rotate(-45deg);
-      padding: 0.1rem 3rem;
+      padding: 0.1rem 4rem;
       content: ' ';
     }
   .card.label.comingsoon::before { content: "P\159ipravujeme"; background: DarkRed; }
   .card.label.new::before { content: "Novinka";  background: DarkGreen; }
+  .card.label.beta::before { content: "Beta";  background: darkblue; }
 
   .card--quarter { flex: 1 1 calc(25% - 2rem); }
   .card--third { flex: 0 1 calc(33.3% - 2rem); }
